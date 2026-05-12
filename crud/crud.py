@@ -6,7 +6,15 @@ file = Path("crud/user.json")
 def criar_user(nome: str):
 
     initial_data = {
-        "name_user": ''
+        "nick_name": 'bot',
+        "level": 'calourinho',
+        "score": {
+            "calourinho": 0,
+            "veterano": 0,
+            "senior": 0,
+            "estombelo": 0
+
+        }
     }
 
     if file.is_file():
@@ -15,18 +23,50 @@ def criar_user(nome: str):
         with open(file, "w") as f:
             json.dump(initial_data, f)
     
-    initial_data = {
-        "nome": nome
-    }
 
     with open(file, 'r') as f:
         dados = json.load(f)
 
-    dados['name_user'] = nome
+    dados['nick_name'] = nome
 
     with open(file, 'w') as f:
         json.dump(dados, f, indent=4)
 
 
+def atualizar_level(level: str):
+    with open(file, 'r') as f:
+        dados = json.load(f)
+    
+    dados['level'] = level 
+
+    with open(file, 'w') as f:
+        json.dump(dados, f, indent=4)
+    
+
+def atualizar_score(level: str, score: int):
+    # Abriu o arquivo para edição
+    with open(file, 'r') as f:
+        dados = json.load(f)
+
+
+    # verificação de level e atribuição de score
+    if level == 'calourinho':
+        dados['score']['calourinho'] += score 
+    elif level == 'veterano':
+        dados['score']['veterano'] += score 
+    elif level == 'senior':
+        dados['score']['senior'] += score
+    elif level == 'estombelo':
+        dados['score']['estombelo'] += score 
+    else:
+        raise ValueError('Esse nível não existe')
+
+    # atualiza o arquivo
+    with open(file, 'w') as f:
+        json.dump(dados, f, indent=4)
+    
+
 if __name__ == "__main__":
     criar_user(input('digite um nome: '))
+    atualizar_level(input('level: '))
+    atualizar_score(input('level: '), int(input('score: ')))
