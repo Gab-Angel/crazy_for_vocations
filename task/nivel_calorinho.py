@@ -17,7 +17,7 @@ print("         / \\")
 print("        /   \\")
 print("       /     \\")
 print("       |     |")
-print("       | cov |")
+print("       | cfv |")
 print("       |     |")
 print("      /|     |\\")
 print("     / |     | \\")
@@ -36,22 +36,25 @@ digitar(">>"*10)
 
 print("")
 print("")
+#primeira task
+def mat1_task(resposta):
+    digitar("vamos dar início a nossa aventura, sua missão começa pelo mundo dos cáculos")
+    digitar("lembrando que antes de chegar no mundo dos limites precisamos testa nossa matématica elementar")
+    print("")
+    print("")
+    digitar("\n resolva: ")
+    print("\n (5)²³\n -----\n (5)²¹")
 
-digitar("vamos dar início a nossa aventura, sua missão começa pelo mundo dos cáculos")
-digitar("lembrando que antes de chegar no mundo dos limites precisamos testa nossa matématica elementar")
-print("")
-print("")
-digitar("\n resolva: ")
-print("\n (5)²³\n -----\n (5)²¹")
+    time.sleep(1)
+    while True:
+        resposta = int(input("sua resposta: "))
 
-time.sleep(1)
-while True:
-    resposta = int(input("sua resposta: "))
-
-    if resposta == 25:
-        digitar(f"very good ")
-        break
-    else:
-        digitar("errou feio painho")
-        digitar("tente novamente: ")
-        
+        if resposta == 25:
+            digitar(f"very good ")
+            break
+        else:
+            digitar("errou feio painho")
+            digitar("tente novamente: ")
+    
+resposta = 1  
+resultado = mat1_task(resposta)
