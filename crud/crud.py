@@ -17,7 +17,10 @@ def criar_user(nome: str):
         "tasks": {
             "calourinho": {
                 "task_01": 0,
-                "task_02": 0
+                "task_02": 0,
+                "task_03": 0,
+                "task_04": 0,
+                "task_05": 0
             },
             "veterano": {
                 "task_01": 0,
@@ -25,7 +28,8 @@ def criar_user(nome: str):
             },
             "senior": {
                 "task_01": 0,
-                "task_02": 0
+                "task_02": 0,
+                "task_03": 0
             },
             "estombelo": {
                 "task_01": 0,
