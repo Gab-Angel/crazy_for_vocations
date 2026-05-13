@@ -13,7 +13,24 @@ def criar_user(nome: str):
             "veterano": 0,
             "senior": 0,
             "estombelo": 0
-
+        },
+        "tasks": {
+            "calourinho": {
+                "task_01": 0,
+                "task_02": 0
+            },
+            "veterano": {
+                "task_01": 0,
+                "task_02": 0
+            },
+            "senior": {
+                "task_01": 0,
+                "task_02": 0
+            },
+            "estombelo": {
+                "task_01": 0,
+                "task_02": 0
+            },
         }
     }
 
@@ -65,8 +82,18 @@ def atualizar_score(level: str, score: int):
     with open(file, 'w') as f:
         json.dump(dados, f, indent=4)
     
+def atualizar_tasks(level: str, task_name: str, score: int):
+    with open(file, 'r') as f:
+        dados = json.load(f)
+
+    dados['tasks'][level][task_name] = score
+
+    with open(file, 'w') as f:
+        json.dump(dados, f, indent=4)
+
 
 if __name__ == "__main__":
-    criar_user(input('digite um nome: '))
-    atualizar_level(input('level: '))
-    atualizar_score(input('level: '), int(input('score: ')))
+    # criar_user(input('digite um nome: '))
+    # atualizar_level(input('level: '))
+    # atualizar_score(input('level: '), int(input('score: ')))
+    atualizar_tasks(input('level: '), input('task_name: '), int(input('score: ')))

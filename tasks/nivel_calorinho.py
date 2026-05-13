@@ -1,3 +1,5 @@
+from crud.crud import atualizar_tasks, atualizar_score
+
 
 #começaremos por cáculo
 
@@ -37,7 +39,7 @@ digitar(">>"*10)
 print("")
 print("")
 #primeira task
-def mat1_task(resposta):
+def task_01(resposta):
     digitar("vamos dar início a nossa aventura, sua missão começa pelo mundo dos cáculos")
     digitar("lembrando que antes de chegar no mundo dos limites precisamos testa nossa matématica elementar")
     print("")
@@ -51,10 +53,12 @@ def mat1_task(resposta):
 
         if resposta == 25:
             digitar(f"very good ")
+            atualizar_tasks('calourinho', "task_01", 10)
+            atualizar_score("calourinho", 10)
             break
         else:
             digitar("errou feio painho")
             digitar("tente novamente: ")
     
 resposta = 1  
-resultado = mat1_task(resposta)
+resultado = task_01(resposta)
