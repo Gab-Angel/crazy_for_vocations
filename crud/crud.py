@@ -81,7 +81,8 @@ def atualizar_score(level: str, score: int):
     # atualiza o arquivo
     with open(file, 'w') as f:
         json.dump(dados, f, indent=4)
-    
+
+
 def atualizar_tasks(level: str, task_name: str, score: int):
     with open(file, 'r') as f:
         dados = json.load(f)
@@ -90,6 +91,16 @@ def atualizar_tasks(level: str, task_name: str, score: int):
 
     with open(file, 'w') as f:
         json.dump(dados, f, indent=4)
+
+
+def pegar_user():
+    with open(file, 'r') as f:
+        dados = json.load(f)
+
+        return dados
+
+
+
 
 
 if __name__ == "__main__":

@@ -1,3 +1,5 @@
+from crud.crud import criar_user
+
 #inicialização
 import time
 import sys
@@ -8,44 +10,90 @@ def digitar(texto, velocidade=0.05):
         time.sleep(velocidade)
     print() 
 
+def boas_vindas_calourinho():
+    digitar(
+        """
+        Bem-vindo a sua jornada em busca das férias CALOURO!!!
+        No Crazy for Vocations você encontrará a nata do que é ser universitário
+        Pra provar que entreterimento e conhecimento andam de mãos dadas
+        E que no fim só queremos férias 👍
 
-nome_player = input("digite seu nickname:")
-digitar(f"tudo bem {nome_player}, seja bem vindo ao crazy for vocations ")
-time.sleep(1)
-digitar("ou aportugaysando loucos por férias")
-time.sleep(1)
-digitar("coisa que vc sentirar ao decorrer do curso")
-time.sleep(1)
-digitar("Dito isso pronto(a) ou não, vamos para o game!")
-print("................")
-time.sleep(1)
-print("................")
-time.sleep(1)
-print("................")
-time.sleep(1)
-print("................")
-time.sleep(1)
-print("................")
-time.sleep(2)
-digitar(f"vamos lá sua primeira task é achar sua didática calorinho {nome_player}")
-digitar(f" tirando onda {nome_player} sua primeira missão é identificar qual sua patente")
-time.sleep(4)
-digitar("opção A calouro")
-digitar("opção B veterano")
-digitar("opção C devsenior")
-digitar("opção D estombelo")
+        Basicamente sua missão aqui é subir de nível
+        Para isso você deve resolver as tasks para ganhar pontuação
 
-primeira_task = input("digite sua resposta: ")
-while primeira_task != "A":
-    if primeira_task == "B":
-        digitar("calma ae alegrim dourado")     
-    elif primeira_task == "C":
-        digitar("alto lá marujo, infelimente ainda não")
-    elif primeira_task == "D":
-        digitar("nem se você quisse muito")
-    else:
-        digitar(f"não tem essa alternativa {nome_player}, veja se está minuscula")
-    primeira_task = input("digite sua resposta novamente: ") 
+        Existe os seguintes níveis:
 
-if primeira_task == "A":
-    digitar(f"parabéns{nome_player}")
+        1 - Calourinho
+        2 - Veterano
+        3 - Sênior
+        4 - Doutor
+        5 - Chefe do Departamento
+        6 - Reitor
+
+        Cada nível tem suas determinadas tasks e sua dificuldade
+        Quanto maior seu nível mais difícil ficam as tasks e subir para o próximo nível
+
+        Durante sua Jornada terá muitas outras situações inusitadas e alguns joguinhos.........
+
+        MAAAAASSSS
+        SEM ENROLAÇÃO... AVANTE CALOURO!!!
+        """
+        )   
+    
+    nome_player = input("Primeiro quero saber qual seu nickname:  ")
+    criar_user(nome_player)
+
+    digitar(f"muito bem {nome_player}, agora você está conosco na jornada!!!")
+    time.sleep(1)
+    digitar("ou aportugaysando loucos por férias")
+    time.sleep(1)
+    digitar("coisa que vc sentirá ao decorrer do curso")
+    time.sleep(1)
+    digitar("Dito isso pronto(a) ou não, vamos para o game!!!")
+    print("................")
+    time.sleep(1)
+    print("................")
+    time.sleep(1)
+    print("................")
+    time.sleep(1)
+    print("................")
+    time.sleep(1)
+    print("................")
+    time.sleep(2)
+    digitar(f"vamos lá!!! sua primeira task é achar sua didática calourinho {nome_player} (missão dificil ein KKKKKK)")
+    digitar(f" tirando onda {nome_player} sua primeira missão é identificar qual nivel voce acha que merece...")
+    time.sleep(4)
+    digitar("opção A: calouro")
+    digitar("opção B: veterano")
+    digitar("opção C: senior")
+    digitar("opção D: doutor")
+    digitar("opção E: chefe do departamento")
+    digitar("opção F: REItor")
+ 
+    primeira_task = input("eai qual vai ser? diga-me: ")
+
+    while True:
+        if primeira_task == "A":
+            digitar(f"boaa, ponha-se em seu lugar e dê sua devida desimportância")
+            break
+        if primeira_task == "B":
+            digitar("calma ae alegrim dourado")     
+        elif primeira_task == "C":
+            digitar("alto lá marujo, infelimente ainda não")
+        elif primeira_task == "D":
+            digitar('doutor é pra quem é médico?')
+        elif primeira_task == 'E':
+            digitar("KKKKKKKKKKKKKKKKKKKKKKKKKKKK boa")
+        elif primeira_task == 'F':
+            digitar('papo de virar estampa de camisa, n toque nesse assunto...')
+        else:
+            digitar(f"não tem essa alternativa {nome_player}, veja se está minuscula")
+        primeira_task = input("eai qual vai ser? diga-me: ") 
+
+
+def menu():
+    ...
+
+
+if __name__ == "__main__":
+    boas_vindas_calourinho()
