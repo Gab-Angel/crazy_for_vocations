@@ -1,4 +1,4 @@
-from crud.crud import criar_user
+from crud.crud import criar_user, pegar_dados
 
 #inicialização
 import time
@@ -76,7 +76,7 @@ def boas_vindas_calourinho():
         if primeira_task == "A":
             digitar(f"boaa, ponha-se em seu lugar e dê sua devida desimportância")
             break
-        if primeira_task == "B":
+        elif primeira_task == "B":
             digitar("calma ae alegrim dourado")     
         elif primeira_task == "C":
             digitar("alto lá marujo, infelimente ainda não")
@@ -91,9 +91,65 @@ def boas_vindas_calourinho():
         primeira_task = input("eai qual vai ser? diga-me: ") 
 
 
+def exibir_dados(dados: dict):
+    nickname = dados['nick_name']
+    level = dados['level']
+    score = dados['score'][level]
+    tasks_completed = []
+    tasks_incompleted = []
+
+    for dado in dados['tasks'][level]:
+        if dados['tasks'][level][dado]['completed'] == False:
+            tasks_incompleted.append(dado)
+        else:
+            tasks_completed.append(dado)
+    
+    print(f'''
+
+    Nickname: {nickname}
+    Nível: {level}
+    Pontuação: {score}
+    Tasks completas no nível {level}: {tasks_completed}
+    Tasks incompletas no nível {level}: {tasks_incompleted}
+''')
+    
+    
+    
+
 def menu():
-    ...
+    while True:
+        print('=' * 100)
+        print('''
+        O que você deseja:
+            
+        1 - Fazer task
+        2 - Consultar dados
+        3 - Fazer anotações
+        4 - Sair
+    ''')
+
+        choice = input('Escolha: ')
+
+        if choice == '1':
+            ...
 
 
-if primeira_task == "A":
-    digitar(f"parabéns{nome_player}")
+        elif choice == '2':
+            dados = pegar_dados()
+            exibir_dados(dados)
+            
+
+        elif choice == '3':
+            ...
+
+
+        elif choice == '4':
+            digitar('Saindo')
+            time.sleep(1)
+            break
+
+
+
+if __name__ == "__main__":
+    # boas_vindas_calourinho()
+    menu()

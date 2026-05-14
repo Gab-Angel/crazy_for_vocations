@@ -6,42 +6,148 @@ file = Path("crud/user.json")
 def criar_user(nome: str):
 
     initial_data = {
-        "nick_name": 'bot',
-        "level": 'calourinho',
-        "score": {
-            "calourinho": 0,
-            "veterano": 0,
-            "senior": 0,
-            "estombelo": 0
+        "nick_name": "bot",
+    "level": "calourinho",
+    "score": {
+        "calourinho": 0,
+        "veterano": 0,
+        "senior": 0,
+        "estombelo": 0
+    },
+    "tasks": {
+        "calourinho": {
+            "task_01": {
+                "score": 0,
+                "completed": False
+            },
+            "task_02": {
+                "score": 0,
+                "completed": False
+            },
+            "task_03": {
+                "score": 0,
+                "completed": False
+            },
+            "task_04": {
+                "score": 0,
+                "completed": False
+            },
+            "task_05": {
+                "score": 0,
+                "completed": False
+            }
         },
-        "tasks": {
-            "calourinho": {
-                "task_01": 0,
-                "task_02": 0,
-                "task_03": 0,
-                "task_04": 0,
-                "task_05": 0,
-                "task_06": 0,
-                "task_07": 0,
-                "task_08": 0,
-                "task_09": 0,
-                "task_10": 0                
-                
+        "veterano": {
+            "task_01": {
+                "score": 0,
+                "completed": False
             },
-            "veterano": {
-                "task_01": 0,
-                "task_02": 0
+            "task_02": {
+                "score": 0,
+                "completed": False
             },
-            "senior": {
-                "task_01": 0,
-                "task_02": 0,
-                "task_03": 0
+            "task_03": {
+                "score": 0,
+                "completed": False
             },
-            "estombelo": {
-                "task_01": 0,
-                "task_02": 0
+            "task_04": {
+                "score": 0,
+                "completed": False
             },
+            "task_05": {
+                "score": 0,
+                "completed": False
+            }
+        },
+        "senior": {
+            "task_01": {
+                "score": 0,
+                "completed": False
+            },
+            "task_02": {
+                "score": 0,
+                "completed": False
+            },
+            "task_03": {
+                "score": 0,
+                "completed": False
+            },
+            "task_04": {
+                "score": 0,
+                "completed": False
+            },
+            "task_05": {
+                "score": 0,
+                "completed": False
+            }
+        },
+        "doutor": {
+            "task_01": {
+                "score": 0,
+                "completed": False
+            },
+            "task_02": {
+                "score": 0,
+                "completed": False
+            },
+            "task_03": {
+                "score": 0,
+                "completed": False
+            },
+            "task_04": {
+                "score": 0,
+                "completed": False
+            },
+            "task_05": {
+                "score": 0,
+                "completed": False
+            }
+        },
+        "chefe_do_departamento":{
+            "task_01": {
+                "score": 0,
+                "completed": False
+            },
+            "task_02": {
+                "score": 0,
+                "completed": False
+            },
+            "task_03": {
+                "score": 0,
+                "completed": False
+            },
+            "task_04": {
+                "score": 0,
+                "completed": False
+            },
+            "task_05": {
+                "score": 0,
+                "completed": False
+            }
+        },
+        "reitor": {
+            "task_01": {
+                "score": 0,
+                "completed": False
+            },
+            "task_02": {
+                "score": 0,
+                "completed": False
+            },
+            "task_03": {
+                "score": 0,
+                "completed": False
+            },
+            "task_04": {
+                "score": 0,
+                "completed": False
+            },
+            "task_05": {
+                "score": 0,
+                "completed": False
+            }
         }
+    }
     }
 
     if file.is_file():
@@ -97,13 +203,15 @@ def atualizar_tasks(level: str, task_name: str, score: int):
     with open(file, 'r') as f:
         dados = json.load(f)
 
-    dados['tasks'][level][task_name] = score
+    dados['tasks'][level][task_name]['score'] = score
+    dados['tasks'][level][task_name]['completed'] = True
+
 
     with open(file, 'w') as f:
         json.dump(dados, f, indent=4)
 
 
-def pegar_user():
+def pegar_dados():
     with open(file, 'r') as f:
         dados = json.load(f)
 
