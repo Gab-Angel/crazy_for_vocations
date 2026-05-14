@@ -95,5 +95,5 @@ def menu():
     ...
 
 
-if __name__ == "__main__":
-    boas_vindas_calourinho()
+if primeira_task == "A":
+    digitar(f"parabéns{nome_player}")
