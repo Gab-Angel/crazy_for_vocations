@@ -21,7 +21,12 @@ def criar_user(nome: str):
                 "task_03": 0,
                 "task_04": 0,
                 "task_05": 0,
-                "task_06": 0
+                "task_06": 0,
+                "task_07": 0,
+                "task_08": 0,
+                "task_09": 0,
+                "task_10": 0                
+                
             },
             "veterano": {
                 "task_01": 0,
