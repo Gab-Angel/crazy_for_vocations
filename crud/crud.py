@@ -222,7 +222,7 @@ def pegar_dados():
 
 
 if __name__ == "__main__":
-    # criar_user(input('digite um nome: '))
+    criar_user(input('digite um nome: '))
     # atualizar_level(input('level: '))
     # atualizar_score(input('level: '), int(input('score: ')))
-    atualizar_tasks(input('level: '), input('task_name: '), int(input('score: ')))
+    # atualizar_tasks(input('level: '), input('task_name: '), int(input('score: ')))

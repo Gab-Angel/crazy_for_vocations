@@ -59,12 +59,9 @@ def task_01(resposta):
         else:
             digitar("errou feio painho")
             digitar("tente novamente: ")
-    
-resposta = 1  
-resultado = task_01(resposta)
 
 
-def task_02(resposta):
+def task_02():
     digitar(">>"* 10)
     digitar("questão 2 !!!")
     digitar(">>"*10)
@@ -85,10 +82,9 @@ def task_02(resposta):
         else:
             digitar("não foi dessa fez meu peixe")
             digitar("tente novamente: ")        
-responsa2 = 1
-resultado1 = task_02(responsa2)        
 
-def task_03(resposta):
+
+def task_03():
     digitar(">>"* 10)
     digitar("questão 3 !!!")
     digitar(">>"*10)
@@ -109,11 +105,9 @@ def task_03(resposta):
         else:
             digitar("não foi dessa fez meu peixe")
             digitar("tente novamente: ")        
-responsa3 = 1
-resultado1 = task_03(responsa3)
 
 
-def task_04(resposta):
+def task_04():
     digitar(">>"* 10)
     digitar("questão 4 !!!")
     digitar(">>"*10)
@@ -134,8 +128,6 @@ def task_04(resposta):
         else:
             digitar("não foi dessa fez meu peixe")
             digitar("tente novamente: ")        
-responsa4 = 1
-resultado2 = task_04(responsa4)
 
 #iniciaremos fem
 
@@ -145,7 +137,7 @@ digitar(">>"*10)
 print('')
 print("")
 
-def task_05(resposta):
+def task_05():
     print(">>"* 10)
     digitar("questão 1 !!!")
     print(">>"*10)
@@ -167,11 +159,9 @@ def task_05(resposta):
         else:
             digitar("queria que fosse verdade...")
             digitar("tente novamente: ")        
-responsa5 = 1
-resultado5 = task_05(responsa5)
 
 
-def task_06(resposta):
+def task_06():
     print(">>"* 10)
     digitar("questão 2 !!!")
     print(">>"*10)
@@ -194,11 +184,9 @@ def task_06(resposta):
         else:
             digitar("não foi dessa vez chicão")
             digitar("tente novamente: ")        
-responsa6 = 1
-resultado6 = task_06(responsa6)
 
 
-def task_07(resposta):
+def task_07():
     print(">>"* 10)
     digitar("questão 3 !!!")
     print(">>"*10)
@@ -221,12 +209,10 @@ def task_07(resposta):
         else:
             digitar("não foi dessa vez chicão")
             digitar("tente novamente: ")        
-responsa7 = 1
-resultado7 = task_07(responsa7)
 
 
 
-def task_08(resposta):
+def task_08():
     print(">>"* 10)
     digitar("questão 4 !!!")
     print(">>"*10)
@@ -251,8 +237,6 @@ def task_08(resposta):
         else:
             digitar("aconteçe com as melhores famílias chicão ")
             digitar("tente novamente: ")        
-responsa8 = 1
-resultado8 = task_08(responsa8)
 
 # tasks de fundamentos da IA
 
@@ -263,7 +247,7 @@ print("")
 print("")
 print("")
 
-def task_09(resposta):
+def task_09():
     print(">>"* 10)
     digitar("questão 1 !!!")
     print(">>"*10)
@@ -282,12 +266,10 @@ def task_09(resposta):
         else:
             digitar("vamos, você consegue ")
             digitar("tente novamente: ")        
-responsa9 = 1
-resultado9 = task_09(responsa9)
 
 
 
-def task_10(resposta):
+def task_10():
     print(">>"* 10)
     digitar("questão 2 !!!")
     print(">>"*10)
@@ -309,8 +291,12 @@ def task_10(resposta):
         else:
             digitar("vamos, você consegue ")
             digitar("tente novamente: ")        
-responsa10 = 1
-resultado10 = task_10(responsa10)
 
 
 
+if __name__ == "__main__":
+    task_06()
+    task_07()
+    task_08()
+    task_09()
+    task_10()
