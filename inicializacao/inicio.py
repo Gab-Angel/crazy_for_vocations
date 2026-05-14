@@ -49,3 +49,6 @@ while primeira_task != "A":
 
 if primeira_task == "A":
     digitar(f"parabéns{nome_player}")
+
+
+
