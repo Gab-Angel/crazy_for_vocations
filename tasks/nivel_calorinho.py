@@ -39,7 +39,7 @@ digitar(">>"*10)
 print("")
 print("")
 
-def task_01(resposta):
+def task_01():
     digitar("vamos dar início a nossa aventura, sua missão começa pelo mundo dos cáculos")
     digitar("lembrando que antes de chegar no mundo dos limites precisamos testa nossa matématica elementar")
     print("")
@@ -55,6 +55,7 @@ def task_01(resposta):
             digitar(f"very good ")
             atualizar_tasks('calourinho', "task_01", 10)
             atualizar_score("calourinho", 10)
+            digitar("parabéns + 10 pontos")
             break
         else:
             digitar("errou feio painho")
@@ -78,6 +79,7 @@ def task_02():
             digitar(f"muito bem zequinha,continue assim !!!")
             atualizar_tasks('calourinho', "task_02", 20)
             atualizar_score("calourinho", 20)
+            digitar("parabéns + 20 pontos")
             break
         else:
             digitar("não foi dessa fez meu peixe")
@@ -101,6 +103,7 @@ def task_03():
             digitar(f"muito bem zequinha,continue assim !!!")
             atualizar_tasks('calourinho', "task_03", 15)
             atualizar_score("calourinho", 15)
+            digitar("parabéns + 15 pontos")
             break
         else:
             digitar("não foi dessa fez meu peixe")
@@ -124,18 +127,19 @@ def task_04():
             digitar(f"muito bem zequinha,continue assim !!!")
             atualizar_tasks('calourinho', "task_04", 25)
             atualizar_score("calourinho", 25)
+            digitar("parabéns + 25 pontos")
             break
         else:
             digitar("não foi dessa fez meu peixe")
             digitar("tente novamente: ")        
 
-#iniciaremos fem
+    #iniciaremos fem
 
-digitar(">>"*10)
-digitar("partiu FEM calourinho!!!")
-digitar(">>"*10)
-print('')
-print("")
+    digitar(">>"*10)
+    digitar("partiu FEM calourinho!!!")
+    digitar(">>"*10)
+    print('')
+    print("")
 
 def task_05():
     print(">>"* 10)
@@ -155,6 +159,7 @@ def task_05():
             digitar(f"infelizmente o cara não pode ter tudo na vida")
             atualizar_tasks('calourinho', "task_05", 15)
             atualizar_score("calourinho", 15)
+            digitar("parabéns + 15 pontos")
             break
         else:
             digitar("queria que fosse verdade...")
@@ -180,6 +185,7 @@ def task_06():
             digitar(f"muito bem zeca pagodinho")
             atualizar_tasks('calourinho', "task_06", 25)
             atualizar_score("calourinho", 25)
+            digitar("parabéns + 25 pontos")
             break
         else:
             digitar("não foi dessa vez chicão")
@@ -205,6 +211,7 @@ def task_07():
             digitar(f"muito bem chico sience")
             atualizar_tasks('calourinho', "task_07", 25)
             atualizar_score("calourinho", 25)
+            digitar("parabéns + 25 pontos")
             break
         else:
             digitar("não foi dessa vez chicão")
@@ -233,19 +240,20 @@ def task_08():
             digitar(f"muito good tirou onda aqui")
             atualizar_tasks('calourinho', "task_08", 70)
             atualizar_score("calourinho", 70)
+            digitar("parabéns + 70 pontos")
             break
         else:
             digitar("aconteçe com as melhores famílias chicão ")
             digitar("tente novamente: ")        
 
-# tasks de fundamentos da IA
+    # tasks de fundamentos da IA
 
-digitar(            ">>"*10)
-print(              "fundamentos da IA"       )
-digitar(            ">>"*10)
-print("")
-print("")
-print("")
+    digitar(">>"*10)
+    print("fundamentos da IA")
+    digitar(">>"*10)
+    print("")
+    print("")
+    print("")
 
 def task_09():
     print(">>"* 10)
@@ -262,6 +270,7 @@ def task_09():
             digitar(f"muito bem calorinho")
             atualizar_tasks('calourinho', "task_09", 20)
             atualizar_score("calourinho", 20)
+            digitar("parabéns + 20 pontos")
             break
         else:
             digitar("vamos, você consegue ")
@@ -287,16 +296,21 @@ def task_10():
             digitar(f"muito bem calorinho")
             atualizar_tasks('calourinho', "task_10", 20)
             atualizar_score("calourinho", 20)
+            digitar("parabéns + 20 pontos")
             break
         else:
             digitar("vamos, você consegue ")
             digitar("tente novamente: ")        
 
-
-
-if __name__ == "__main__":
-    task_06()
-    task_07()
-    task_08()
-    task_09()
+if __name__ =="__main__":
+    task_01()
+    task_02()
+    task_03() 
+    task_04() 
+    task_05() 
+    task_06() 
+    task_07() 
+    task_08() 
+    task_09() 
     task_10()
+         

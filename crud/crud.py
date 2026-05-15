@@ -11,8 +11,9 @@ def criar_user(nome: str):
     "score": {
         "calourinho": 0,
         "veterano": 0,
-        "senior": 0,
-        "estombelo": 0
+        "mestre": 0,
+        "chefe_do_departamento": 0,
+        "reitor": 0,
     },
     "tasks": {
         "calourinho": {
@@ -35,7 +36,29 @@ def criar_user(nome: str):
             "task_05": {
                 "score": 0,
                 "completed": False
-            }
+            },
+             "task_06": {
+                "score": 0,
+                "completed": False
+            },
+             "task_07": {
+                "score": 0,
+                "completed": False
+            },
+             "task_08": {
+                "score": 0,
+                "completed": False
+            },
+             "task_09": {
+                "score": 0,
+                "completed": False
+            },
+             "task_10": {
+                "score": 0,
+                "completed": False
+            },
+         
+            
         },
         "veterano": {
             "task_01": {
@@ -81,7 +104,7 @@ def criar_user(nome: str):
                 "completed": False
             }
         },
-        "doutor": {
+        "mestre": {
             "task_01": {
                 "score": 0,
                 "completed": False

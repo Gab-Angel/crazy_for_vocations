@@ -19,7 +19,13 @@
 - função de atualizar tasks melhorada
 - diário de bordo inicializado
 
+# dia 14/05
+- atualizamos o crud (alteramos algumas patentes erradas0)
+- 10 tasks do nivel calorinho finalizada
+- 5 tasks dp nivel veterano
+- fizemos a pasta de anotações
+
 # horas_trabalhadas: 
 
-11 horas
+14 horas
 
