@@ -113,8 +113,24 @@ def exibir_dados(dados: dict):
     Tasks incompletas no nível {level}: {tasks_incompleted}
 ''')
     
+
+def anotacoes():
+    digitar("O que você deseja:")
+    digitar('''
+    1 - Nova nota
+    2 - Listar notas
+    3 - Editar nota
+    4 - Ver conteudo da nota
+''')
     
-    
+    choice = input('Escolha: ')
+
+    if choice == '1':
+        ...
+    elif choice == '2':
+        ...
+    elif choice == '3':
+        ...
 
 def menu():
     while True:
