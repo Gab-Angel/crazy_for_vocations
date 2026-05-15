@@ -1,4 +1,6 @@
 from crud.crud import criar_user, pegar_dados
+from anotacoes.notes import nova_nota, editar_nota, listar_notas, ver_conteudo
+
 
 #inicialização
 import time
@@ -115,34 +117,50 @@ def exibir_dados(dados: dict):
     
 
 def anotacoes():
-    digitar("O que você deseja:")
-    digitar('''
-    1 - Nova nota
-    2 - Listar notas
-    3 - Editar nota
-    4 - Ver conteudo da nota
-''')
-    
-    choice = input('Escolha: ')
+    while True:
+        digitar('='*100, 0.01)
+        digitar("O que você deseja:")
+        digitar('''
+        1 - Nova nota
+        2 - Listar notas
+        3 - Editar nota
+        4 - Ver conteudo da nota
+        5 - Sair
+    ''', 0.01)
+        
+        choice = input('Escolha: ')
 
-    if choice == '1':
-        ...
-    elif choice == '2':
-        ...
-    elif choice == '3':
-        ...
+        if choice == '1':
+            nome = input('Nome da nota que deseja criar: ')
+            conteudo = input('O que voce deseja anotar: ')
+            nova_nota(nome, conteudo)
+
+        elif choice == '2':
+            listar_notas()
+
+        elif choice == '3':
+            nome = input('Nome da nota que deseja editar: ')
+            conteudo = input('O que voce deseja anotar: ')
+            editar_nota(nome, conteudo)
+
+        elif choice == '4':
+            ver_conteudo(input('Nome da nota que deseja ver o conteúdo: '))
+        
+        elif choice == '5':
+            break
+
 
 def menu():
     while True:
-        print('=' * 100)
-        print('''
+        digitar('=' * 100, 0.01)
+        digitar('''
         O que você deseja:
             
         1 - Fazer task
         2 - Consultar dados
         3 - Fazer anotações
         4 - Sair
-    ''')
+    ''', 0.01)
 
         choice = input('Escolha: ')
 
@@ -156,7 +174,7 @@ def menu():
             
 
         elif choice == '3':
-            ...
+            anotacoes()
 
 
         elif choice == '4':
@@ -167,5 +185,5 @@ def menu():
 
 
 if __name__ == "__main__":
-    boas_vindas_calourinho()
+    # boas_vindas_calourinho()
     menu()

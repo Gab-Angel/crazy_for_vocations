@@ -20,12 +20,14 @@ def nova_nota(nome: str, conteudo: str):
 
     with open(file, 'w', encoding='utf-8') as f:
         json.dump(dados, f, indent=4)
+    
+    print(f'Nota --> {nome} <-- criada!!!')
 
 def listar_notas():
     if file.is_file():
         with open(file, 'r') as f:
             notas = json.load(f)
-            for nota in notas: print(f"{'=' * 10} {nota}")
+            for nota in notas: print(f"{'='*10}> {nota}")
 
     else:
         print(f"""
@@ -60,13 +62,21 @@ def editar_nota(nome: str, conteudo: str):
               {'='*24}
               """)
 
+def ver_conteudo(nome):
+    with open(file, 'r') as f:
+        dados = json.load(f)
+    
+    conteudo = dados[nome]
+
+    print(f'Conteúdo === {conteudo} ===')
 
 if __name__ == '__main__':
     # nova_nota(input('nome da nota: '), input('Conteudo da nota: '))
-    listar_notas()
-    editar_nota(input('nome da nota: '), input('Conteudo da nota: '))
+    # listar_notas()
+    # editar_nota(input('nome da nota: '), input('Conteudo da nota: '))
+    # ver_conteudo(input('nome da nota para ver o conteudo: '))
 
-
+    ...
 
 
 

@@ -25,6 +25,13 @@
 - 5 tasks dp nivel veterano
 - fizemos a pasta de anotações
 
+# dia 15/05
+- conclusão da funcionalidade de anotações:
+1. criar nota
+2. editar nota
+3. listar notas
+4. ver conteído da nota
+
 # horas_trabalhadas: 
 
 14 horas
