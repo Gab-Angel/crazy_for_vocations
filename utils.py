@@ -19,7 +19,7 @@ def verificar_score():
     p_doutor = 800
     p_chefe_dp = 1000
 
-    if p_calourinho <= score_atual:
+    if nivel  == 'calourinho' and p_calourinho <= score_atual:
         atualizar_level('veterano')
         digitar(f'''
                 {"="*100}
@@ -41,7 +41,7 @@ def verificar_score():
                 continue
                 # choice = input('Digite s ou n: ').lower()
         
-    elif p_veterano <= score_atual:
+    elif nivel == 'veterano' and p_veterano <= score_atual:
         atualizar_level('mestre')
         digitar(f'''
                 {"="*100}
@@ -62,7 +62,7 @@ def verificar_score():
             else:
                 continue
         
-    elif p_mestre <= score_atual:
+    elif nivel == 'meste' and  p_mestre <= score_atual:
         atualizar_level('doutor')
         digitar(f'''
                 {"="*100}
@@ -83,7 +83,7 @@ def verificar_score():
             else:
                 continue
     
-    elif p_doutor <= score_atual:
+    elif nivel  == 'doutor' and p_doutor <= score_atual:
         atualizar_level('chefe_do_departamento')
         digitar(f'''
                 {"="*100}
@@ -104,7 +104,7 @@ def verificar_score():
             else:
                 continue
 
-    elif p_chefe_dp <= score_atual:
+    elif nivel == 'chefe_do_departamento' and  p_chefe_dp <= score_atual:
         atualizar_level('reitor')
         digitar(f'''
                 {"="*100}

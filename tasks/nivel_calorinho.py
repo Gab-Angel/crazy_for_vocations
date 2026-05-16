@@ -1,36 +1,7 @@
 from crud.crud import atualizar_tasks, atualizar_score
-from random import shuffle
 from utils import digitar
-from tasks.task import verificar_score
-
 import time
-#task 1
 
-# --- Desenho de Foguete com >> ---
-
-print("         / \\")
-print("        /   \\")
-print("       /     \\")
-print("       |     |")
-print("       | cfv |")
-print("       |     |")
-print("      /|     |\\")
-print("     / |     | \\")
-print("    >> |_____| <<")
-print("   >>>>  |  |  <<<<")
-print("  >>>>>>      <<<<<<")
-print(" >>>>>>>>    >>>>>>>>")
-
-digitar("\n   UMA CAMISINHA ESTOUROU PRA EU NASCER E EU NASCI PARA ESTOURAR!")
-print("")
-print("") 
-
-digitar(">>"* 10)
-digitar("nível calouro!!!")
-digitar(">>"*10)
-
-print("")
-print("")
 
 def task_01():
     digitar("vamos dar início a nossa aventura, sua missão começa pelo mundo dos cáculos")
@@ -297,22 +268,32 @@ def task_10():
             digitar("tente novamente: ")        
 
 
-def iniciar_task_calourinho():
-    aleatorio = [task_01,task_02,task_03,
-                task_04, task_05, task_06,
-                task_07, task_08, task_09, task_10 ]
-    
-    shuffle(aleatorio) 
-
-    for comando in aleatorio:
-        comando ()
-        decisao = verificar_score()
-
-        if decisao == True:
-            continue
-        else:
-            return
+tasks_calourinho = [task_01,task_02,task_03,
+        task_04, task_05, task_06,
+        task_07, task_08, task_09, task_10 ]
 
 
 if __name__ == "__main__":
-    ...
+    print("         / \\")
+    print("        /   \\")
+    print("       /     \\")
+    print("       |     |")
+    print("       | cfv |")
+    print("       |     |")
+    print("      /|     |\\")
+    print("     / |     | \\")
+    print("    >> |_____| <<")
+    print("   >>>>  |  |  <<<<")
+    print("  >>>>>>      <<<<<<")
+    print(" >>>>>>>>    >>>>>>>>")
+
+    digitar("\n   UMA CAMISINHA ESTOUROU PRA EU NASCER E EU NASCI PARA ESTOURAR!")
+    print("")
+    print("") 
+
+    digitar(">>"* 10)
+    digitar("nível calouro!!!")
+    digitar(">>"*10)
+
+    print("")
+    print("")

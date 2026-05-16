@@ -1,49 +1,9 @@
 from crud.crud import atualizar_tasks, atualizar_score
-from random import shuffle
-
+from utils import digitar
+import time
 
 #começaremos por cáculo
 
-import time
-import sys
-
-def digitar(texto, velocidade=0.05):
-    for caractere in texto:
-        print(caractere, end='', flush=True)
-        time.sleep(velocidade)
-    print() 
-#tesk 1
-
-# --- Desenho de Foguete com >> ---
-
-print("         / \\")
-print("        /   \\")
-print("       /     \\")
-print("       |     |")
-print("       | cfv |")
-print("       |     |")
-print("      /|     |\\")
-print("     / |     | \\")
-print("    >> |_____| <<")
-print("   >>>>  |  |  <<<<")
-print("  >>>>>>      <<<<<<")
-print(" >>>>>>>>    >>>>>>>>")
-
-digitar("\n   UMA CAMISINHA ESTOUROU PRA EU NASCER E EU NASCI PARA ESTOURAR!")
-print("")
-print("") 
-digitar(">>"*10)
-digitar("BEM-VINDO VETERANO")
-digitar(">>"*10)
-print("")
-print("")
-digitar("apartir desse momento cada task terá apenas uma resposta")
-digitar("ou seja, se errar não poderá tentar novamente")
-print("")
-print("")
-print("")
-digitar("que comecem os jogos!! ha ha ha ha ha")
-print("")
 
 def task_01():
     print(">>"* 10)
@@ -348,9 +308,37 @@ def task_10():
         digitar("só que não kkkkkk ")
 
 
+tasks_veterano = [task_01,task_02,task_03,
+        task_04, task_05, task_06,
+        task_07, task_08, task_09, task_10 ]
+
 
 if __name__ =="__main__":
-    aleatorio = [task_01,task_02,task_03, task_04, task_05, task_06, task_07, task_08, task_09, task_10 ]
-    shuffle(aleatorio) 
-    for comando in aleatorio:
-        comando ()
+    print("         / \\")
+    print("        /   \\")
+    print("       /     \\")
+    print("       |     |")
+    print("       | cfv |")
+    print("       |     |")
+    print("      /|     |\\")
+    print("     / |     | \\")
+    print("    >> |_____| <<")
+    print("   >>>>  |  |  <<<<")
+    print("  >>>>>>      <<<<<<")
+    print(" >>>>>>>>    >>>>>>>>")
+
+    digitar("\n   UMA CAMISINHA ESTOUROU PRA EU NASCER E EU NASCI PARA ESTOURAR!")
+    print("")
+    print("") 
+    digitar(">>"*10)
+    digitar("BEM-VINDO VETERANO")
+    digitar(">>"*10)
+    print("")
+    print("")
+    digitar("apartir desse momento cada task terá apenas uma resposta")
+    digitar("ou seja, se errar não poderá tentar novamente")
+    print("")
+    print("")
+    print("")
+    digitar("que comecem os jogos!! ha ha ha ha ha")
+    print("")

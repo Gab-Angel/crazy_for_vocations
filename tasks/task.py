@@ -1,7 +1,10 @@
 from crud.crud import pegar_dados
 from utils import verificar_score
 from utils import digitar
-from tasks.nivel_calorinho import iniciar_task_calourinho
+from random import shuffle
+from tasks.nivel_calorinho import tasks_calourinho
+from tasks.nivel_veterano import tasks_veterano
+
 
 def consultar_tasks():
     dados = pegar_dados()
@@ -33,13 +36,28 @@ def consultar_tasks():
         digitar(f"{'='*10}> Não há Tasks Inconcluídas", 0.01)
 
 
+def iniciar_task(tasks: list): 
+    shuffle(tasks) 
+
+    for comando in tasks:
+        comando ()
+        decisao = verificar_score()
+
+        if decisao == True:
+            continue
+        else:
+            return
+        
+
 def fazer_tasks():
     dados = pegar_dados()
     nivel = dados['level']
 
 
     if nivel == 'calourinho':
-        iniciar_task_calourinho()
+        iniciar_task(tasks_calourinho)
+    elif nivel == 'veterano':
+        iniciar_task(tasks_veterano)
     elif nivel == 'mestre':
         ...
     elif nivel == 'doutor':
@@ -48,10 +66,6 @@ def fazer_tasks():
         ...
     else:
         ...
-
-
-
-
 
 
 

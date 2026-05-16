@@ -65,6 +65,11 @@ Jorge:
 - foguete novo frase nova
 - nivel_mestre atualizado com lógica de perda
 
+# dia 16/05
+
+- lógica de inicialização inserida na main
+- mudanças na chamada de função dos arquivos de tasks (agora a função está no arquivo de funcionalidades: task.py)
+- refatoração da função de verificar score
 
 # horas_trabalhadas: 
 
