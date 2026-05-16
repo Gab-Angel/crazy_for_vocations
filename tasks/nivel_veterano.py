@@ -1,4 +1,5 @@
 from crud.crud import atualizar_tasks, atualizar_score
+from random import shuffle
 
 
 #começaremos por cáculo
@@ -207,10 +208,149 @@ def task_06():
 
 
 
+def task_07():
+    print(">>"* 10)
+    digitar("questão 7 !!!")
+    print(">>"*10)
+    print("")            
+    print("")        
+    print("")
+    print("")
+    print("")
+    print("Qual das seguintes alternativas define corretamente o conceito de uma variável na programação?")
+    print("")
+    print("dadas as opções:")
+    print("")
+    print("A)Um espaço na memória do computador reservado para armazenar um dado que pode ser alterado durante a execução do programa.\nB)Um tipo de dado que apenas pode assumir valores inteiros e positivos.\nC)Uma função matemática complexa pré-compilada no sistema operativo.\nD)Uma instrução que impede o fluxo do programa de continuar a ser executado.")
+    
+    resposta1 = (input("sua resposta?? (a letra MAIUSCULA):  "))
+
+    if resposta1 == "A":
+        digitar(f"essa tava o mel pode dizer")
+        atualizar_tasks('veterano', "task_07", 25)
+        atualizar_score("veterano", 25)
+        digitar("parabéns + 25 pontos")
+    else:
+        print("tente dnv.....")
+        time.sleep(3)
+        digitar("só que não kkkkkk ")
+
+
+def task_07():
+    print(">>"* 10)
+    digitar("questão 7 !!!")
+    print(">>"*10)
+    print("")            
+    print("")        
+    print("")
+    print("")
+    print("")
+    print("Qual das seguintes alternativas define corretamente o conceito de uma variável na programação?")
+    print("")
+    print("dadas as opções:")
+    print("")
+    print("A)Um espaço na memória do computador reservado para armazenar um dado que pode ser alterado durante a execução do programa.\nB)Um tipo de dado que apenas pode assumir valores inteiros e positivos.\nC)Uma função matemática complexa pré-compilada no sistema operativo.\nD)Uma instrução que impede o fluxo do programa de continuar a ser executado.")
+    
+    resposta1 = (input("sua resposta?? (a letra MAIUSCULA):  "))
+
+    if resposta1 == "A":
+        digitar(f"essa tava o mel pode dizer")
+        atualizar_tasks('veterano', "task_07", 25)
+        atualizar_score("veterano", 25)
+        digitar("parabéns + 25 pontos")
+    else:
+        print("tente dnv.....")
+        time.sleep(3)
+        digitar("só que não kkkkkk ")
+
+
+def task_08():
+    print(">>"* 10)
+    digitar("questão 8 !!!")
+    print(">>"*10)
+    print("")            
+    print("")        
+    print("")
+    print("")
+    print("")
+    print("Qual é a estrutura de controlei ideal\n quando se conhece previamente o número exato de \nvezes que um bloco de código deve ser repetido??")
+    print("")
+    print("dadas as opções:")
+    print("")
+    print("A)Estrutura de repetição Enquanto (while)\nB) estrutura de repetição para (for)\nC)estrutura condicional se-senão(if-else)\nD)estrututa de escolha mútipla caso (switch-case)")
+    
+    resposta1 = (input("sua resposta?? (a letra MAIUSCULA):  "))
+
+    if resposta1 == "B":
+        digitar(f"essa tava o mel pode dizer")
+        atualizar_tasks('veterano', "task_08", 25)
+        atualizar_score("veterano", 25)
+        digitar("parabéns + 25 pontos")
+    else:
+        print("tente dnv.....")
+        time.sleep(3)
+        digitar("só que não kkkkkk ")
+
+
+def task_09():
+    print(">>"* 10)
+    digitar("questão 9 !!!")
+    print(">>"*10)
+    print("")            
+    print("")        
+    print("")
+    print("")
+    print("")
+    print("Se uma condição numa estrutura 'Enquanto' (while)\n for inicialmente falsa, quantas vezes o bloco de código interno será executado?")
+    print("")
+    print("dadas as opções:")
+    print("")
+    print("A) 0 vezes\nB) Pelo menos 1 vez.\nC) Infinitas vezes, gerando um loop infinito.\nD) Depende do compilador utilizado.")
+    
+    resposta1 = (input("sua resposta?? (a letra MAIUSCULA):  "))
+
+    if resposta1 == "A":
+        digitar(f"essa tava o mel pode dizer")
+        atualizar_tasks('veterano', "task_09", 30)
+        atualizar_score("veterano", 30)
+        digitar("parabéns + 30 pontos")
+    else:
+        print("tente dnv.....")
+        time.sleep(3)
+        digitar("só que não kkkkkk ")
+
+
+def task_10():
+    print(">>"* 10)
+    digitar("questão 10 !!!")
+    print(">>"*10)
+    print("")            
+    print("")        
+    print("")
+    print("")
+    print("")
+    print("Um vetor (ou array unidimensional) é definido como:")
+    print("")
+    print("dadas as opções:")
+    print("")
+    print("A) Uma tabela bidimensional composta por linhas e colunas de tipos de dados variados.\nB) Um ficheiro de texto guardado no disco rígido para persistência de dados.\nC) Uma estrutura de dados homogénea que armazena uma coleção de elementos do mesmo tipo sob um único nome.\nD) Uma função que gera números aleatórios sequenciais")
+    
+    resposta1 = (input("sua resposta?? (a letra MAIUSCULA):  "))
+
+    if resposta1 == "C":
+        digitar(f"boa chico da costa  uau tu tu tu sarru!!")
+        atualizar_tasks('veterano', "task_10", 30)
+        atualizar_score("veterano", 30)
+        digitar("parabéns + 30 pontos")
+    else:
+        print("tente dnv.....")
+        time.sleep(3)
+        digitar("só que não kkkkkk ")
+
+
+
 if __name__ =="__main__":
-    task_01()
-    task_02()
-    task_03()
-    task_04()
-    task_05()
-    task_06()
+    aleatorio = [task_01,task_02,task_03, task_04, task_05, task_06, task_07, task_08, task_09, task_10 ]
+    shuffle(aleatorio) 
+    for comando in aleatorio:
+        comando ()
