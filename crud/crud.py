@@ -241,10 +241,13 @@ def atualizar_tasks(level: str, task_name: str, score: int):
 
 
 def pegar_dados():
-    with open(file, 'r') as f:
-        dados = json.load(f)
+    try:
+        with open(file, 'r') as f:
+            dados = json.load(f)
 
-        return dados
+            return dados
+    except Exception as e:
+        print(f'Erro ao buscar dados')
 
 
 

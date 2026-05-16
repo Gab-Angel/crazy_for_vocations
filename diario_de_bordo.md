@@ -26,17 +26,46 @@
 - fizemos a pasta de anotações
 
 # dia 15/05
+
+Angel:
+
 - conclusão da funcionalidade de anotações:
 1. criar nota
 2. editar nota
 3. listar notas
 4. ver conteído da nota
-- atualizei todas as tesks:
+
+- atualização de pegar dados do crud
+- mudanças em inicializacao:
+1. função task
+
+- mudanças no nivel_calourinho:
+1. melhoria da ramdomização das tasks em uma função
+2. função para iniciar tasks 
+
+- arquivo task.py:
+1. consultar_tasks
+2. fazer_tasks
+
+- arquivo utils.py
+1. colocado função digitar
+2. criada função verificar_escore
+
+- criada main.py 
+
+---
+Jorge:
+
+- atualizei todas as tasks:
 1. garanti isonomia nas questões
 2. randomizaei o as questões
 3. corrigir uma patente no arquivo crud
 4. adicionei mais uma task no nivel veterano
+- finalizado o nivel_veterano
+- foguete novo frase nova
+- nivel_mestre atualizado com lógica de perda
+
+
 # horas_trabalhadas: 
 
-14 horas
-
+20 horas

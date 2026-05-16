@@ -1,16 +1,10 @@
 from crud.crud import criar_user, pegar_dados
 from anotacoes.notes import nova_nota, editar_nota, listar_notas, ver_conteudo, deletar_nota
+from tasks.task import consultar_tasks, fazer_tasks
+from utils import digitar
+#inicialização 
 
-
-#inicialização
 import time
-import sys
-
-def digitar(texto, velocidade=0.05):
-    for caractere in texto:
-        print(caractere, end='', flush=True)
-        time.sleep(velocidade)
-    print() 
 
 def boas_vindas_calourinho():
     digitar(
@@ -40,28 +34,28 @@ def boas_vindas_calourinho():
         MAAAAASSSS
         SEM ENROLAÇÃO... AVANTE CALOURO!!!
         """
-        )   
+        , 0.001)   
     
     nome_player = input("Primeiro quero saber qual seu nickname:  ")
     criar_user(nome_player)
 
     digitar(f"muito bem {nome_player}, agora você está conosco na jornada!!!")
-    time.sleep(1)
+    time.sleep(0.5)
     digitar("ou aportugaysando loucos por férias")
-    time.sleep(1)
+    time.sleep(0.5)
     digitar("coisa que vc sentirá ao decorrer do curso")
-    time.sleep(1)
+    time.sleep(0.5)
     digitar("Dito isso pronto(a) ou não, vamos para o game!!!")
     print("................")
-    time.sleep(1)
+    time.sleep(0.5)
+    print("................")
+    time.sleep(0.5)
+    print("................")
+    time.sleep(0.5)
+    print("................")
+    time.sleep(0.5)
     print("................")
     time.sleep(1)
-    print("................")
-    time.sleep(1)
-    print("................")
-    time.sleep(1)
-    print("................")
-    time.sleep(2)
     digitar(f"vamos lá!!! sua primeira task é achar sua didática calourinho {nome_player} (missão dificil ein KKKKKK)")
     digitar(f" tirando onda {nome_player} sua primeira missão é identificar qual nivel voce acha que merece...")
     time.sleep(4)
@@ -152,13 +146,34 @@ def anotacoes():
             break
 
 
+def task():
+    while True:
+        digitar('''
+            O que vamos fazer:
+                
+            1 - Fazer Task
+            2 - Consultar Tasks
+            3 - Sair 
+            ''', 0.01)
+        choice = input('O que você deseja: ')
+        if choice == '1':
+            fazer_tasks()
+
+        elif choice == '2':
+            consultar_tasks()
+
+        elif choice == '3':
+            break
+
+
+
 def menu():
     while True:
         digitar('=' * 100, 0.01)
         digitar('''
         O que você deseja:
             
-        1 - Fazer task
+        1 - Tasks
         2 - Consultar dados
         3 - Fazer anotações
         4 - Sair
@@ -167,7 +182,7 @@ def menu():
         choice = input('Escolha: ')
 
         if choice == '1':
-            ...
+            task()
 
 
         elif choice == '2':
