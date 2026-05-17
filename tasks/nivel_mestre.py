@@ -86,10 +86,11 @@ digitar(">>>>>>.      *         < <        <  <<    <<     *   <<   <<  << <    
 digitar(">>>>            <<    *      << < <          *     < < *  * ")
 digitar(">>       *        <<            << <     *         *       ")
 digitar("   *                 *          < <      ")
-
+print("")
+print("")
 digitar("GAIA É QUE NEM ANEMIA, SÓ TEM QUEM NÃO COME DIREITO!!!!!!")
-
-
+print("")
+print("")
 def task_01():
     print(">>"* 10)
     digitar("questão 1 !!!")
@@ -194,8 +195,40 @@ def task_04():
         atualizar_score("mestre", -25)
         digitar("você perdeu 25 pontos!!")
 
+
+def task_05():
+    print(">>"* 10)
+    digitar("questão 5 !!!")
+    print(">>"*10)
+    print("")            
+    digitar("lembre-se quando você errar perderá pontos!!")        
+    print("")
+    print("")
+    print("Seja a função f(x) = 5x^4 - 3x^2 + 7x - 12. Qual é a sua primeira derivada, f'(x)?")
+    print("")
+    print("")
+    print("a) 20x^3 - 6x + 7\nb) 5x^3 - 3x + 7\nc) 20x^4 - 6x^2 + 7\nd) 20x^3 - 6x")
+
+    resposta1 = (input("sua resposta: ")).upper()
+
+    if resposta1 == "A":
+        digitar(f"não esperava meus mestres skywalker")
+        atualizar_tasks('mestre', "task_05", 35)
+        atualizar_score("mestre", 35)
+        digitar("parabéns + 35 pontos")
+    else:
+        print("essa tava sal mesmo ")
+        atualizar_tasks('mestre', "task_05", -25)
+        atualizar_score("mestre", -25)
+        digitar("você perdeu 25 pontos!!")
+
+
+
+
+
+
 if __name__ =="__main__":
-    aleatorio = [task_01,task_02,task_03, task_04 ]
+    aleatorio = [task_01,task_02,task_03, task_04, task_05 ]
     shuffle(aleatorio) 
     for comando in aleatorio:
         comando ()

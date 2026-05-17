@@ -101,6 +101,26 @@ def criar_user(nome: str):
                 "score": 0,
                 "completed": False
             },
+            "task_11": {
+                "score": 0,
+                "completed": False
+            },
+            "task_12": {
+                "score": 0,
+                "completed": False
+            },
+            "task_13": {
+                "score": 0,
+                "completed": False
+            },
+            "task_14": {
+                "score": 0,
+                "completed": False
+            },
+            "task_15": {
+                "score": 0,
+                "completed": False
+            }
             
 
         },

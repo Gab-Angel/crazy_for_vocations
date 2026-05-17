@@ -66,11 +66,21 @@ Jorge:
 - nivel_mestre atualizado com lógica de perda
 
 # dia 16/05
+Angel:
 
 - lógica de inicialização inserida na main
 - mudanças na chamada de função dos arquivos de tasks (agora a função está no arquivo de funcionalidades: task.py)
 - refatoração da função de verificar score
 
+Jorge:
+
+- garanti a isonomia dos níveis
+- adicionei + 5 tasks ao nivel_veterano
+§§ criei um relatório de tasks:
+    - nesse relatório dei o somatório analítico para a progressão de level
+    - favor observar, que a relação é acumulativa
+    - irá nos ajudar a manter a coerência das tasks para cada nível e modo de cobrança  
+
 # horas_trabalhadas: 
 
-20 horas
+24 horas

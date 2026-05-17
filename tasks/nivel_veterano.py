@@ -167,7 +167,6 @@ def task_06():
         digitar("só que não kkkkkk ")
 
 
-
 def task_07():
     print(">>"* 10)
     digitar("questão 7 !!!")
@@ -183,35 +182,7 @@ def task_07():
     print("")
     print("A)Um espaço na memória do computador reservado para armazenar um dado que pode ser alterado durante a execução do programa.\nB)Um tipo de dado que apenas pode assumir valores inteiros e positivos.\nC)Uma função matemática complexa pré-compilada no sistema operativo.\nD)Uma instrução que impede o fluxo do programa de continuar a ser executado.")
     
-    resposta1 = (input("sua resposta?? (a letra MAIUSCULA):  "))
-
-    if resposta1 == "A":
-        digitar(f"essa tava o mel pode dizer")
-        atualizar_tasks('veterano', "task_07", 25)
-        atualizar_score("veterano", 25)
-        digitar("parabéns + 25 pontos")
-    else:
-        print("tente dnv.....")
-        time.sleep(3)
-        digitar("só que não kkkkkk ")
-
-
-def task_07():
-    print(">>"* 10)
-    digitar("questão 7 !!!")
-    print(">>"*10)
-    print("")            
-    print("")        
-    print("")
-    print("")
-    print("")
-    print("Qual das seguintes alternativas define corretamente o conceito de uma variável na programação?")
-    print("")
-    print("dadas as opções:")
-    print("")
-    print("A)Um espaço na memória do computador reservado para armazenar um dado que pode ser alterado durante a execução do programa.\nB)Um tipo de dado que apenas pode assumir valores inteiros e positivos.\nC)Uma função matemática complexa pré-compilada no sistema operativo.\nD)Uma instrução que impede o fluxo do programa de continuar a ser executado.")
-    
-    resposta1 = (input("sua resposta?? (a letra MAIUSCULA):  "))
+    resposta1 = (input("sua resposta?? (a letra MAIUSCULA):  ")).upper()
 
     if resposta1 == "A":
         digitar(f"essa tava o mel pode dizer")
@@ -307,10 +278,146 @@ def task_10():
         time.sleep(3)
         digitar("só que não kkkkkk ")
 
+    
+
+def task_11():
+    print(">>"* 10)
+    digitar("questão 11 !!!")
+    print(">>"*10)
+    print("")            
+    print("")        
+    print("")
+    print("")
+    print("Considere as seguintes proposições simples: ")
+    print("p: O número 7 é primo.q: O número 9 é par")
+    print(".Determine o valor lógico (Verdadeiro ou Falso) da proposição composta:")
+    print("p^ ¬q")
+    print("")
+    print("")
+    
+    resposta1 = (input("sua resposta:  ")).upper()
+
+    if resposta1 == "VERDADEIRA:
+        digitar(f"boa chico da costa  uau tu tu tu sarru!!")
+        atualizar_tasks('veterano', "task_11", 30)
+        atualizar_score("veterano", 30)
+        digitar("parabéns + 30 pontos")
+    else:
+        print("tente dnv.....")
+        time.sleep(3)
+        digitar("só que não kkkkkk ")
+
+
+def task_12():
+    print(">>"* 10)
+    digitar("questão 12 !!!")
+    print(">>"*10)
+    print("")            
+    print("")        
+    print("")
+    print("")
+    print("A proposição composta dada por (p^ ¬p) é classificada como uma\n Tautologia, uma Contradição ou uma Contingência? ")
+    print("")
+    print("")
+    print("")
+   
+    resposta1 = (input("sua resposta:  "))
+
+    if resposta1 == "contradição":
+        digitar(f"boa chico da costa  uau tu tu tu sarru!!")
+        atualizar_tasks('veterano', "task_12", 30)
+        atualizar_score("veterano", 30)
+        digitar("parabéns + 30 pontos")
+    else:
+        print("tente dnv.....")
+        time.sleep(3)
+        digitar("só que não kkkkkk ")
+
+
+def task_13():
+    print(">>"* 10)
+    digitar("questão 13 !!!")
+    print(">>"*10)
+    print("")            
+    print("")        
+    print("")
+    print("")
+    print("A proposição composta é classificada como uma\n Tautologia, uma Contradição ou uma Contingência? ")
+    print("")
+    print("[(p -> q)^(q -> r)] -> (p -> r)")
+    print("")
+   
+    resposta1 = (input("sua resposta(responda em mínusculo):  "))
+
+    if resposta1 == "tautologia":
+        digitar(f"boa chico da costa  uau tu tu tu sarru!!")
+        atualizar_tasks('veterano', "task_13", 30)
+        atualizar_score("veterano", 30)
+        digitar("parabéns + 30 pontos")
+    else:
+        print("tente dnv.....")
+        time.sleep(3)
+        digitar("só que não kkkkkk ")
+
+
+def task_14():
+    print(">>"* 10)
+    digitar("questão 14 !!!")
+    print(">>"*10)
+    print("")            
+    print("")        
+    print("")
+    print("")
+    print("Simplifique ao máximo a proposição lógica abaixon\n utilizando as propriedades das álgebras booleanas \nleis de De Morgan, distributiva, absorção, etc.): ")
+    print("")
+    print("~[~(p ^ q) -> ~ p]")
+    print("")
+   
+    resposta1 = (input("sua resposta(responda tudo junto):  "))
+
+    if resposta1 == "p^~q":
+        digitar(f"boa chico da costa  uau tu tu tu sarru!!")
+        atualizar_tasks('veterano', "task_14", 30)
+        atualizar_score("veterano", 30)
+        digitar("parabéns + 30 pontos")
+    else:
+        print("tente dnv.....")
+        time.sleep(3)
+        digitar("só que não kkkkkk ")
+
+
+
+def task_15():
+    print(">>"* 10)
+    digitar("questão 15 !!!")
+    print(">>"*10)
+    print("")            
+    digitar("a mais hard desse nível")        
+    print("")
+    print("")
+    print("Considere três proposições p, q e r.\n Sabe-se que a proposição composta (p^ ~q) <-> (q -> r) é Veradeira.\n Se a proposição q é Verdadeira, determine, obrigatoriamente, os valores lógicos de p e de r. ")
+    print("")
+    print("obs: sabendo que uma preposição é indeterminavel, responda indeterminada")
+    print("")
+   
+    resposta1 = (input("qual o valor de p: "))
+    resposta2 = input(("qual o valor de r: "))
+
+    if resposta1 == 'indeterminada' and 'falsa'
+        digitar(f"boa chico da costa  uau tu tu tu sarru!!")
+        atualizar_tasks('veterano', "task_15", 35)
+        atualizar_score("veterano", 35)
+        digitar("parabéns + 35 pontos")
+    else:
+        print("tente dnv.....")
+        time.sleep(3)
+        digitar("só que não kkkkkk ")
+
 
 tasks_veterano = [task_01,task_02,task_03,
         task_04, task_05, task_06,
-        task_07, task_08, task_09, task_10 ]
+        task_07, task_08, task_09, task_10, task_11, 
+        task_12, task_13, task_14, task_15 ]
 
 
 if __name__ =="__main__":
