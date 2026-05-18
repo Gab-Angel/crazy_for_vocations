@@ -4,8 +4,8 @@ import time
 
 
 def task_01():
-    digitar("vamos dar início a nossa aventura, sua missão começa pelo mundo dos cáculos")
-    digitar("lembrando que antes de chegar no mundo dos limites precisamos testa nossa matématica elementar")
+    digitar("\033[1;33;44mvamos dar início a nossa aventura, sua missão começa pelo mundo dos cáculos\033[m]")
+    digitar("\033[1;33;44mlembrando que antes de chegar no mundo dos limites precisamos testa nossa matématica elementar\033[m]")
     print("")
     print("")
     digitar("\n resolva: ")
@@ -19,7 +19,7 @@ def task_01():
             digitar(f"very good ")
             atualizar_tasks('calourinho', "task_01", 20)
             atualizar_score("calourinho", 20)
-            digitar("parabéns + 20 pontos")
+            digitar("\033[32mparabéns + 20 pontos\033[m")
             break
         else:
             digitar("errou feio painho")
@@ -43,7 +43,7 @@ def task_02():
             digitar(f"muito bem zequinha,continue assim !!!")
             atualizar_tasks('calourinho', "task_02", 25)
             atualizar_score("calourinho", 25)
-            digitar("parabéns + 25 pontos")
+            digitar("\033[32mparabéns + 25 pontos\033[m")
             break
         else:
             digitar("não foi dessa fez meu peixe")
@@ -67,7 +67,7 @@ def task_03():
             digitar(f"muito bem zequinha,continue assim !!!")
             atualizar_tasks('calourinho', "task_03", 25)
             atualizar_score("calourinho", 25)
-            digitar("parabéns + 25 pontos")
+            digitar("\033[32mparabéns + 25 pontos\033[m")
             break
         else:
             digitar("não foi dessa fez meu peixe")
@@ -91,7 +91,7 @@ def task_04():
             digitar(f"muito bem zequinha,continue assim !!!")
             atualizar_tasks('calourinho', "task_04", 30)
             atualizar_score("calourinho", 30)
-            digitar("parabéns + 30 pontos")
+            digitar("\033[32mparabéns + 30 pontos\033[m")
             break
         else:
             digitar("não foi dessa fez meu peixe")
@@ -123,7 +123,7 @@ def task_05():
             digitar(f"infelizmente o cara não pode ter tudo na vida")
             atualizar_tasks('calourinho', "task_05", 20)
             atualizar_score("calourinho", 20)
-            digitar("parabéns + 20 pontos")
+            digitar("\033[32mparabéns + 20 pontos\033[m")
             break
         else:
             digitar("queria que fosse verdade...")
@@ -149,7 +149,7 @@ def task_06():
             digitar(f"muito bem zeca pagodinho")
             atualizar_tasks('calourinho', "task_06", 25)
             atualizar_score("calourinho", 25)
-            digitar("parabéns + 25 pontos")
+            digitar("\033[32mparabéns + 25 pontos\033[m")
             break
         else:
             digitar("não foi dessa vez chicão")
@@ -175,7 +175,7 @@ def task_07():
             digitar(f"muito bem chico sience")
             atualizar_tasks('calourinho', "task_07", 25)
             atualizar_score("calourinho", 25)
-            digitar("parabéns + 25 pontos")
+            digitar("\033[32mparabéns + 25 pontos\033[m")
             break
         else:
             digitar("não foi dessa vez chicão")
@@ -204,7 +204,7 @@ def task_08():
             digitar(f"muito good tirou onda aqui")
             atualizar_tasks('calourinho', "task_08", 30)
             atualizar_score("calourinho", 30)
-            digitar("parabéns + 30 pontos")
+            digitar("\033[32mparabéns + 30 pontos\033[m")
             break
         else:
             digitar("aconteçe com as melhores famílias chicão ")
@@ -235,7 +235,7 @@ def task_09():
             digitar(f"muito bem calorinho")
             atualizar_tasks('calourinho', "task_09", 25)
             atualizar_score("calourinho", 25)
-            digitar("parabéns + 25 pontos")
+            digitar("\033[32mparabéns + 25 pontos\033[m")
             break
         else:
             digitar("vamos, você consegue ")
@@ -261,7 +261,7 @@ def task_10():
             digitar(f"muito bem calorinho")
             atualizar_tasks('calourinho', "task_10", 25)
             atualizar_score("calourinho", 25)
-            digitar("parabéns + 25 pontos")
+            digitar("\033[32mparabéns + 25 pontos\033[m")
             break
         else:
             digitar("vamos, você consegue ")
@@ -274,25 +274,25 @@ tasks_calourinho = [task_01,task_02,task_03,
 
 
 if __name__ == "__main__":
-    print("         / \\")
-    print("        /   \\")
-    print("       /     \\")
-    print("       |     |")
-    print("       | cfv |")
-    print("       |     |")
-    print("      /|     |\\")
-    print("     / |     | \\")
-    print("    >> |_____| <<")
-    print("   >>>>  |  |  <<<<")
-    print("  >>>>>>      <<<<<<")
-    print(" >>>>>>>>    >>>>>>>>")
+    print("\033[34m            / \\")
+    print("\033[34m           /   \\")
+    print("\033[34m          /     \\")
+    print("\033[34m          |     |")
+    print("\033[34m          | cfv |")
+    print("\033[34m          |     |")
+    print("\033[34m         /|     |\\")
+    print("\033[34m        / |     | \\")
+    print("\033[36m      >>  |_____| <<")
+    print("\033[33m    >>>>  | | | |  <<<<")
+    print("\033[33m   >>>>>>         <<<<<<")
+    print("\033[31m  >>>>>>>>         <<<<<<<<\033[m")
 
     digitar("\n   UMA CAMISINHA ESTOUROU PRA EU NASCER E EU NASCI PARA ESTOURAR!")
     print("")
     print("") 
 
     digitar(">>"* 10)
-    digitar("nível calouro!!!")
+    digitar("\033[;30;46mnível calouro!!!\033[m")
     digitar(">>"*10)
 
     print("")

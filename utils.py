@@ -8,6 +8,12 @@ def digitar(texto, velocidade=0.01):
     print()
 
 
+def digitar2(texto, velocidade=0.05):
+    for caractere in texto:
+        print(caractere, end='', flush=True)
+        time.sleep(velocidade)
+    print()
+
 def verificar_score():
     dados = pegar_dados()
     nivel = dados['level']

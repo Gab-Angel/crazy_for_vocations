@@ -2,6 +2,7 @@ from crud.crud import atualizar_tasks, atualizar_score
 from utils import digitar
 import time
 
+from cores import colorirgreen, colorired
 #começaremos por cáculo
 
 
@@ -22,9 +23,9 @@ def task_01():
         digitar(f"muito meu veterano")
         atualizar_tasks('veterano', "task_01", 20)
         atualizar_score("veterano", 20)
-        digitar("parabéns + 20 pontos")
+        colorirgreen("parabéns + 20 pontos")
     else:
-        print("não foi dessa vez ")
+        colorired("não foi dessa vez ")
             
 
 def task_02():
@@ -44,11 +45,11 @@ def task_02():
         digitar(f"tá sabidinho já ne meu peixe!!")
         atualizar_tasks('veterano', "task_02", 25)
         atualizar_score("veterano", 25)
-        digitar("parabéns + 25 pontos")
+        colorirgreen("parabéns + 25 pontos")
     else:
         print("tente dnv.....")
         time.sleep(3)
-        digitar("só que não kkkkkk ")
+        colorired("só que não kkkkkk ")
 
     print("")
     print(">>"* 10)
@@ -74,11 +75,11 @@ def task_03():
         digitar(f"muito meu veterano")
         atualizar_tasks('veterano', "task_03", 20)
         atualizar_score("veterano", 20)
-        digitar("parabéns + 20 pontos")
+        colorirgreen("parabéns + 20 pontos")
     else:
         print("tente dnv.....")
         time.sleep(3)
-        digitar("só que não kkkkkk ")
+        colorired("só que não kkkkkk ")
 
 
 def task_04():
@@ -104,11 +105,11 @@ def task_04():
         digitar(f"essa tava o mel pode dizer")
         atualizar_tasks('veterano', "task_04", 30)
         atualizar_score("veterano", 30)
-        digitar("parabéns + 30 pontos")
+        colorirgreen("parabéns + 30 pontos")
     else:
         print("tente dnv.....")
         time.sleep(3)
-        digitar("só que não kkkkkk ")
+        colorired("só que não kkkkkk ")
 
 def task_05():
     print(">>"* 10)
@@ -131,11 +132,11 @@ def task_05():
         digitar(f"essa tava o mel pode dizer")
         atualizar_tasks('veterano', "task_05", 25)
         atualizar_score("veterano", 25)
-        digitar("parabéns + 25 pontos")
+        colorirgreen("parabéns + 25 pontos")
     else:
         print("tente dnv.....")
         time.sleep(3)
-        digitar("só que não kkkkkk ")
+        colorired("só que não kkkkkk ")
 
 
 
@@ -160,11 +161,11 @@ def task_06():
         digitar(f"essa tava o mel pode dizer")
         atualizar_tasks('veterano', "task_06", 25)
         atualizar_score("veterano", 25)
-        digitar("parabéns + 25 pontos")
+        colorirgreen("parabéns + 25 pontos")
     else:
         print("tente dnv.....")
         time.sleep(3)
-        digitar("só que não kkkkkk ")
+        colorired("só que não kkkkkk ")
 
 
 def task_07():
@@ -188,11 +189,11 @@ def task_07():
         digitar(f"essa tava o mel pode dizer")
         atualizar_tasks('veterano', "task_07", 25)
         atualizar_score("veterano", 25)
-        digitar("parabéns + 25 pontos")
+        colorirgreen("parabéns + 25 pontos")
     else:
         print("tente dnv.....")
         time.sleep(3)
-        digitar("só que não kkkkkk ")
+        colorired("só que não kkkkkk ")
 
 
 def task_08():
@@ -216,11 +217,11 @@ def task_08():
         digitar(f"essa tava o mel pode dizer")
         atualizar_tasks('veterano', "task_08", 25)
         atualizar_score("veterano", 25)
-        digitar("parabéns + 25 pontos")
+        colorirgreen("parabéns + 25 pontos")
     else:
         print("tente dnv.....")
         time.sleep(3)
-        digitar("só que não kkkkkk ")
+        colorired("só que não kkkkkk ")
 
 
 def task_09():
@@ -244,11 +245,11 @@ def task_09():
         digitar(f"essa tava o mel pode dizer")
         atualizar_tasks('veterano', "task_09", 30)
         atualizar_score("veterano", 30)
-        digitar("parabéns + 30 pontos")
+        colorirgreen("parabéns + 30 pontos")
     else:
         print("tente dnv.....")
         time.sleep(3)
-        digitar("só que não kkkkkk ")
+        colorired("só que não kkkkkk ")
 
 
 def task_10():
@@ -272,11 +273,11 @@ def task_10():
         digitar(f"boa chico da costa  uau tu tu tu sarru!!")
         atualizar_tasks('veterano', "task_10", 30)
         atualizar_score("veterano", 30)
-        digitar("parabéns + 30 pontos")
+        colorirgreen("parabéns + 30 pontos")
     else:
         print("tente dnv.....")
         time.sleep(3)
-        digitar("só que não kkkkkk ")
+        colorired("só que não kkkkkk ")
 
     
 
@@ -297,15 +298,15 @@ def task_11():
     
     resposta1 = (input("sua resposta:  ")).upper()
 
-    if resposta1 == "VERDADEIRA:
+    if resposta1 == "VERDADEIRA":
         digitar(f"boa chico da costa  uau tu tu tu sarru!!")
         atualizar_tasks('veterano', "task_11", 30)
         atualizar_score("veterano", 30)
-        digitar("parabéns + 30 pontos")
+        colorirgreen("parabéns + 30 pontos")
     else:
         print("tente dnv.....")
         time.sleep(3)
-        digitar("só que não kkkkkk ")
+        colorired("só que não kkkkkk ")
 
 
 def task_12():
@@ -327,11 +328,11 @@ def task_12():
         digitar(f"boa chico da costa  uau tu tu tu sarru!!")
         atualizar_tasks('veterano', "task_12", 30)
         atualizar_score("veterano", 30)
-        digitar("parabéns + 30 pontos")
+        colorirgreen("parabéns + 30 pontos")
     else:
         print("tente dnv.....")
         time.sleep(3)
-        digitar("só que não kkkkkk ")
+        colorired("só que não kkkkkk ")
 
 
 def task_13():
@@ -353,11 +354,11 @@ def task_13():
         digitar(f"boa chico da costa  uau tu tu tu sarru!!")
         atualizar_tasks('veterano', "task_13", 30)
         atualizar_score("veterano", 30)
-        digitar("parabéns + 30 pontos")
+        colorirgreen("parabéns + 30 pontos")
     else:
         print("tente dnv.....")
         time.sleep(3)
-        digitar("só que não kkkkkk ")
+        colorired("só que não kkkkkk ")
 
 
 def task_14():
@@ -373,17 +374,17 @@ def task_14():
     print("~[~(p ^ q) -> ~ p]")
     print("")
    
-    resposta1 = (input("sua resposta(responda tudo junto):  "))
+    resposta1 = (input("sua resposta(responda ^ = e; ~ = não):  "))
 
-    if resposta1 == "p^~q":
+    if resposta1 == "p e nao q":
         digitar(f"boa chico da costa  uau tu tu tu sarru!!")
         atualizar_tasks('veterano', "task_14", 30)
         atualizar_score("veterano", 30)
-        digitar("parabéns + 30 pontos")
+        colorirgreen("parabéns + 30 pontos")
     else:
         print("tente dnv.....")
         time.sleep(3)
-        digitar("só que não kkkkkk ")
+        colorired("só que não kkkkkk ")
 
 
 
@@ -403,15 +404,15 @@ def task_15():
     resposta1 = (input("qual o valor de p: "))
     resposta2 = input(("qual o valor de r: "))
 
-    if resposta1 == 'indeterminada' and 'falsa'
+    if resposta1 == 'indeterminada' and resposta1 == 'falsa':
         digitar(f"boa chico da costa  uau tu tu tu sarru!!")
         atualizar_tasks('veterano', "task_15", 35)
         atualizar_score("veterano", 35)
-        digitar("parabéns + 35 pontos")
+        colorirgreen("parabéns + 35 pontos")
     else:
         print("tente dnv.....")
         time.sleep(3)
-        digitar("só que não kkkkkk ")
+        colorired("só que não kkkkkk ")
 
 
 tasks_veterano = [task_01,task_02,task_03,

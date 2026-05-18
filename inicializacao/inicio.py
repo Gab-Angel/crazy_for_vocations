@@ -1,13 +1,14 @@
 from crud.crud import criar_user, pegar_dados
 from anotacoes.notes import nova_nota, editar_nota, listar_notas, ver_conteudo, deletar_nota
 from tasks.task import consultar_tasks, fazer_tasks
-from utils import digitar
+from utils import digitar2
+from cores import colorirciano
 #inicialização 
 
 import time
 
 def boas_vindas_calourinho():
-    digitar(
+    digitar2(
         """
         Bem-vindo a sua jornada em busca das férias CALOURO!!!
         No Crazy for Vocations você encontrará a nata do que é ser universitário
@@ -34,18 +35,19 @@ def boas_vindas_calourinho():
         MAAAAASSSS
         SEM ENROLAÇÃO... AVANTE CALOURO!!!
         """
-        , 0.001)   
+        , 0.01)   
     
     nome_player = input("Primeiro quero saber qual seu nickname:  ")
     criar_user(nome_player)
 
-    digitar(f"muito bem {nome_player}, agora você está conosco na jornada!!!")
+    digitar2(f"muito bem {nome_player}, agora você está conosco na jornada!!!")
     time.sleep(0.5)
-    digitar("ou aportugaysando loucos por férias")
+    colorirciano("CRAZY FOR VOCATIONS")
+    digitar2("ou aportugaysando loucos por férias")
     time.sleep(0.5)
-    digitar("coisa que vc sentirá ao decorrer do curso")
+    digitar2("coisa que vc sentirá ao decorrer do curso")
     time.sleep(0.5)
-    digitar("Dito isso pronto(a) ou não, vamos para o game!!!")
+    digitar2("Dito isso pronto(a) ou não, vamos para o game!!!")
     print("................")
     time.sleep(0.5)
     print("................")
@@ -56,34 +58,34 @@ def boas_vindas_calourinho():
     time.sleep(0.5)
     print("................")
     time.sleep(1)
-    digitar(f"vamos lá!!! sua primeira task é achar sua didática calourinho {nome_player} (missão dificil ein KKKKKK)")
-    digitar(f" tirando onda {nome_player} sua primeira missão é identificar qual nivel voce acha que merece...")
+    digitar2(f"vamos lá!!! sua primeira task é achar sua didática calourinho {nome_player} (missão dificil ein KKKKKK)")
+    digitar2(f" tirando onda {nome_player} sua primeira missão é identificar qual nivel voce acha que merece...")
     time.sleep(4)
-    digitar("opção A: calouro")
-    digitar("opção B: veterano")
-    digitar("opção C: senior")
-    digitar("opção D: doutor")
-    digitar("opção E: chefe do departamento")
-    digitar("opção F: REItor")
+    digitar2("opção A: calouro")
+    digitar2("opção B: veterano")
+    digitar2("opção C: senior")
+    digitar2("opção D: doutor")
+    digitar2("opção E: chefe do departamento")
+    digitar2("opção F: REItor")
  
     primeira_task = input("eai qual vai ser? diga-me: ")
 
     while True:
         if primeira_task == "A":
-            digitar(f"boaa, ponha-se em seu lugar e dê sua devida desimportância")
+            digitar2(f"boaa, ponha-se em seu lugar e dê sua devida desimportância")
             break
         elif primeira_task == "B":
-            digitar("calma ae alegrim dourado")     
+            digitar2("calma ae alegrim dourado")     
         elif primeira_task == "C":
-            digitar("alto lá marujo, infelimente ainda não")
+            digitar2("alto lá marujo, infelimente ainda não")
         elif primeira_task == "D":
-            digitar('doutor é pra quem é médico?')
+            digitar2('doutor é pra quem é médico?')
         elif primeira_task == 'E':
-            digitar("KKKKKKKKKKKKKKKKKKKKKKKKKKKK boa")
+            digitar2("KKKKKKKKKKKKKKKKKKKKKKKKKKKK boa")
         elif primeira_task == 'F':
-            digitar('papo de virar estampa de camisa, n toque nesse assunto...')
+            digitar2('papo de virar estampa de camisa, n toque nesse assunto...')
         else:
-            digitar(f"não tem essa alternativa {nome_player}, veja se está minuscula")
+            digitar2(f"não tem essa alternativa {nome_player}, veja se está minuscula")
         primeira_task = input("eai qual vai ser? diga-me: ") 
 
 
@@ -112,9 +114,9 @@ def exibir_dados(dados: dict):
 
 def anotacoes():
     while True:
-        digitar('='*100, 0.01)
-        digitar("O que você deseja:")
-        digitar('''
+        digitar2('='*100, 0.01)
+        digitar2("O que você deseja:")
+        digitar2('''
         1 - Nova nota
         2 - Listar notas
         3 - Editar nota
@@ -148,7 +150,7 @@ def anotacoes():
 
 def task():
     while True:
-        digitar('''
+        digitar2('''
             O que vamos fazer:
                 
             1 - Fazer Task
@@ -169,8 +171,8 @@ def task():
 
 def menu():
     while True:
-        digitar('=' * 100, 0.01)
-        digitar('''
+        digitar2('=' * 100, 0.01)
+        digitar2('''
         O que você deseja:
             
         1 - Tasks
@@ -195,7 +197,7 @@ def menu():
 
 
         elif choice == '4':
-            digitar('Saindo')
+            digitar2('Saindo')
             time.sleep(1)
             break
 

@@ -1,6 +1,7 @@
 from crud.crud import atualizar_tasks, atualizar_score
 from random import shuffle
 
+from cores import colorirgreen, colorired
 #começaremos por cáculo
 
 import time
@@ -108,12 +109,12 @@ def task_01():
         digitar(f"não esperava meus mestres skywalker")
         atualizar_tasks('mestre', "task_01", 40)
         atualizar_score("mestre", 40)
-        digitar("parabéns + 30 pontos")
+        colorirgreen("parabéns + 30 pontos")
     else:
         print("essa tava sal mesmo ")
         atualizar_tasks('mestre', "task_01", -35)
         atualizar_score("mestre", -35)
-        digitar("você perdeu 35 pontos!!")
+        colorired("você perdeu 35 pontos!!")
 
 
 def task_02():
@@ -133,12 +134,12 @@ def task_02():
         digitar(f"não esperava meus mestres skywalker")
         atualizar_tasks('mestre', "task_02", 35)
         atualizar_score("mestre", 35)
-        digitar("parabéns + 35 pontos")
+        colorirgreen("parabéns + 35 pontos")
     else:
         print("essa tava sal mesmo ")
         atualizar_tasks('mestre', "task_02", -25)
         atualizar_score("mestre", -25)
-        digitar("você perdeu 25 pontos!!")
+        colorired("você perdeu 25 pontos!!")
     
 
 def task_03():
@@ -160,12 +161,12 @@ def task_03():
         digitar(f"não esperava meus mestres skywalker")
         atualizar_tasks('mestre', "task_03", 30)
         atualizar_score("mestre", 30)
-        digitar("parabéns + 30 pontos")
+        colorirgreen("parabéns + 30 pontos")
     else:
         print("essa tava sal mesmo ")
         atualizar_tasks('mestre', "task_03", -25)
         atualizar_score("mestre", -25)
-        digitar("você perdeu 25 pontos!!")
+        colorired("você perdeu 25 pontos!!")
 
 
 
@@ -188,12 +189,12 @@ def task_04():
         digitar(f"não esperava meus mestres skywalker")
         atualizar_tasks('mestre', "task_04", 35)
         atualizar_score("mestre", 35)
-        digitar("parabéns + 35 pontos")
+        colorirgreen("parabéns + 35 pontos")
     else:
         print("essa tava sal mesmo ")
         atualizar_tasks('mestre', "task_04", -25)
         atualizar_score("mestre", -25)
-        digitar("você perdeu 25 pontos!!")
+        colorired("você perdeu 25 pontos!!")
 
 
 def task_05():
@@ -215,12 +216,12 @@ def task_05():
         digitar(f"não esperava meus mestres skywalker")
         atualizar_tasks('mestre', "task_05", 35)
         atualizar_score("mestre", 35)
-        digitar("parabéns + 35 pontos")
+        colorirgreen("parabéns + 35 pontos")
     else:
         print("essa tava sal mesmo ")
         atualizar_tasks('mestre', "task_05", -25)
         atualizar_score("mestre", -25)
-        digitar("você perdeu 25 pontos!!")
+        colorired("você perdeu 25 pontos!!")
 
 
 
