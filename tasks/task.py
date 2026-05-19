@@ -43,6 +43,11 @@ def iniciar_task(tasks: list):
     for comando in tasks:
         comando ()
         decisao = verificar_score()
+        
+        sair = input('Deseja Continuar? s/n').lower().strip()
+
+        if sair == 'n':
+            return
 
         if decisao == True:
             continue

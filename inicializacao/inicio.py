@@ -22,7 +22,7 @@ def boas_vindas_calourinho():
 
         1 - Calourinho
         2 - Veterano
-        3 - Sênior
+        3 - Mestre
         4 - Doutor
         5 - Chefe do Departamento
         6 - Reitor
@@ -57,7 +57,7 @@ def boas_vindas_calourinho():
     print("................")
     time.sleep(0.5)
     print("................")
-    time.sleep(1)
+    time.sleep(0.3)
     digitar(f"vamos lá!!! sua primeira task é achar sua didática calourinho {nome_player} (missão dificil ein KKKKKK)")
     digitar(f" tirando onda {nome_player} sua primeira missão é identificar qual nivel voce acha que merece...")
     time.sleep(4)
