@@ -8,12 +8,6 @@ def digitar(texto, velocidade=0.01):
     print()
 
 
-def digitar2(texto, velocidade=0.05):
-    for caractere in texto:
-        print(caractere, end='', flush=True)
-        time.sleep(velocidade)
-    print()
-
 def verificar_score():
     dados = pegar_dados()
     nivel = dados['level']
@@ -45,7 +39,6 @@ def verificar_score():
                 return False
             else:
                 continue
-                # choice = input('Digite s ou n: ').lower()
         
     elif nivel == 'veterano' and p_veterano <= score_atual:
         atualizar_level('mestre')
@@ -68,7 +61,7 @@ def verificar_score():
             else:
                 continue
         
-    elif nivel == 'meste' and  p_mestre <= score_atual:
+    elif nivel == 'mestre' and  p_mestre <= score_atual:
         atualizar_level('doutor')
         digitar(f'''
                 {"="*100}

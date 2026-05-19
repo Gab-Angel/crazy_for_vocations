@@ -88,6 +88,12 @@ Jorge:
 - consertei a função digitar que estava muito rápida em alguns arquivos
 - consertei o texto do início ("aquela parte do aportugaysando") que tava incoerente
 
+# dia 18/05
+
+- dia da convocação do neymar!!!!!
+- correção de bugs
+- eliminação de código desnecessário: função digitar2 deletada
+
 # horas_trabalhadas: 
 
 28 horas

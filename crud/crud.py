@@ -12,6 +12,7 @@ def criar_user(nome: str):
         "calourinho": 0,
         "veterano": 0,
         "mestre": 0,
+        "doutor": 0,
         "chefe_do_departamento": 0,
         "reitor": 0,
     },
@@ -230,10 +231,14 @@ def atualizar_score(level: str, score: int):
         dados['score']['calourinho'] += score 
     elif level == 'veterano':
         dados['score']['veterano'] += score 
-    elif level == 'senior':
-        dados['score']['senior'] += score
-    elif level == 'estombelo':
-        dados['score']['estombelo'] += score 
+    elif level == 'mestre':
+        dados['score']['mestre'] += score
+    elif level == 'doutor':
+        dados['score']['doutor'] += score 
+    elif level == 'chefe_do_departamento':
+        dados['score']['chefe_do_departamento'] += score 
+    elif level == 'reitor':
+        dados['score']['reitor'] += score 
     else:
         raise ValueError('Esse nível não existe')
 

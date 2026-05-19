@@ -4,6 +4,7 @@ from utils import digitar
 from random import shuffle
 from tasks.nivel_calorinho import tasks_calourinho
 from tasks.nivel_veterano import tasks_veterano
+from tasks.nivel_mestre import tasks_mestre
 
 
 def consultar_tasks():
@@ -59,7 +60,7 @@ def fazer_tasks():
     elif nivel == 'veterano':
         iniciar_task(tasks_veterano)
     elif nivel == 'mestre':
-        ...
+        iniciar_task(tasks_mestre)
     elif nivel == 'doutor':
         ...
     elif nivel == 'chefe_do_departamento':
