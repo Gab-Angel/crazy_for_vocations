@@ -81,6 +81,13 @@ Jorge:
     - favor observar, que a relação é acumulativa
     - irá nos ajudar a manter a coerência das tasks para cada nível e modo de cobrança  
 
+# dia 17/05
+Jorge:
+- criei um sistema de cores para as tesks
+- indicadores de erro e acerto (red,green)
+- consertei a função digitar que estava muito rápida em alguns arquivos
+- consertei o texto do início ("aquela parte do aportugaysando") que tava incoerente
+
 # horas_trabalhadas: 
 
-24 horas
+28 horas
