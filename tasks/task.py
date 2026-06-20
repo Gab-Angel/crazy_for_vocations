@@ -1,11 +1,9 @@
-from crud.crud import pegar_dados
-from utils import verificar_score
 from utils import digitar
 from random import shuffle
-
+from db.crud import get_data_user
 
 def consultar_tasks():
-    dados = pegar_dados()
+    dados = get_data_user()
 
     nivel = dados['level']
     concluidos = []
@@ -37,4 +35,4 @@ def consultar_tasks():
 
 if __name__ == '__main__':
     # consultar_tasks()
-    verificar_score()
+    ...

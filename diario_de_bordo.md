@@ -230,6 +230,7 @@ Angel:
 Angel:
 - apostas:
 1. função girar melhorada 
+2. função de trocar pontos em bets atualizada
 
 - crud:
 1. get_random_items agora separa items de achievements
@@ -237,13 +238,26 @@ Angel:
 
 - crud antigo completamente deletado
 
-A fazer: 
-1. refazer completamente a função trocar_pontos 
 
 Jorge:
 - desenvolvi o dia 2 da lore
 - criei uma nova ramificação da lore principal
 - mais 115 pontos para quem cumprir o segundo dia com todas as ecolhas certas
 - Raiam Santos e matheus cunha!! 
+
+
+# dia 20/06
+
+Angel:
+- Inicialização de POO no projeto:
+1. criação das classes:
+-- BaseLoreTask
+-- Lore
+-- Task
+
+Com o objetivo de padronizar a criação de lores e tasks
+obs: muito a implementar ainda
+
+
 # horas_trabalhadas: 
-60 horas
+63 horas
