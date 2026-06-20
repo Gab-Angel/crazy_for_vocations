@@ -254,10 +254,10 @@ Angel:
 -- BaseLoreTask
 -- Lore
 -- Task
+-- Carrosel
 
-Com o objetivo de padronizar a criação de lores e tasks
-obs: muito a implementar ainda
+Com o objetivo de padronizar a criação e apresentação de lores e tasks
 
 
 # horas_trabalhadas: 
-63 horas
+62 horas
